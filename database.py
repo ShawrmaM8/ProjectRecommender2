@@ -3,8 +3,8 @@ import json
 import os
 import chardet
 
-DB_PATH = r'C:\Users\muzam\OneDrive\Desktop\PROJECTS\project-recommend\data\projects.db'
-JSON_PATH = r'C:\Users\muzam\OneDrive\Desktop\PROJECTS\project-recommend\data\projects.json'
+DB_PATH = 'data\projects.db'
+JSON_PATH = 'data\projects.json'
 
 
 def init_db():
@@ -140,4 +140,5 @@ def get_all_projects():
         print(f"Error retrieving projects: {e}")
         return []
     finally:
+
         conn.close()
